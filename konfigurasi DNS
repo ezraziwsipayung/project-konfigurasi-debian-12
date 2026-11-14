@@ -1,0 +1,63 @@
+# Konfigurasi DNS pada Debian 12
+
+## 1. Pengertian DNS
+
+DNS (Domain Name System) adalah sistem yang berfungsi menerjemahkan nama domain menjadi alamat IP Address. DNS memudahkan pengguna mengakses website tanpa harus menghafal alamat IP.
+
+Contoh:
+- Nama domain: google.com
+- DNS akan membantu menerjemahkannya menjadi alamat IP server Google.
+
+## 2. Fungsi DNS
+
+DNS memiliki beberapa fungsi, yaitu:
+- Menerjemahkan nama domain menjadi alamat IP.
+- Memudahkan pengguna mengakses website.
+- Membantu komputer menemukan server tujuan.
+- Mempermudah pengelolaan jaringan.
+
+## 3. Jenis DNS
+
+Beberapa jenis DNS yang umum digunakan:
+
+- **DNS Resolver:** Menerima permintaan DNS dari perangkat pengguna.
+- **DNS Root Server:** Mengarahkan permintaan menuju server DNS yang sesuai.
+- **DNS Authoritative:** Menyediakan informasi DNS resmi untuk suatu domain.
+
+## 4. Contoh DNS Server
+
+Berikut beberapa alamat DNS server publik:
+
+| Penyedia | Alamat DNS |
+|---|---|
+| Google DNS | 8.8.8.8 |
+| Google DNS | 8.8.4.4 |
+| Cloudflare DNS | 1.1.1.1 |
+| Cloudflare DNS | 1.0.0.1 |
+
+## 5. Contoh Konfigurasi DNS pada Debian 12
+
+Salah satu cara mengatur DNS pada Debian 12 adalah melalui konfigurasi jaringan atau layanan pengelola jaringan yang digunakan.
+
+Contoh alamat DNS yang dapat digunakan:
+
+```text
+nameserver 8.8.8.8
+nameserver 1.1.1.1
+```
+
+Alamat tersebut merupakan contoh DNS publik dari Google dan Cloudflare.
+
+## 6. Pengujian DNS
+
+DNS dapat diuji menggunakan perintah terminal berikut:
+
+```bash
+nslookup google.com
+```
+
+Perintah tersebut digunakan untuk memeriksa apakah nama domain berhasil diterjemahkan menjadi alamat IP.
+
+## 7. Kesimpulan
+
+DNS merupakan bagian penting dalam jaringan komputer karena membantu menerjemahkan nama domain menjadi alamat IP. Dengan adanya DNS, pengguna dapat mengakses website dengan lebih mudah tanpa harus menghafal alamat IP server.
